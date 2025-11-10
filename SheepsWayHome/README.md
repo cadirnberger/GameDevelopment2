@@ -55,6 +55,9 @@ The animated spirt is the player which has a runing animation. There dynamic obs
 ### Creative Extensions:
 I made it so the theme was close enough to wild/animal theme with the assest closing resembling and the souds too. The falling objects do change colors so that Special visual effects. The triggering  is sort a new mechanic. 
 
+### Bugs
+Some of the phyics/collision are buggy
+
 
 
 ## Credits
