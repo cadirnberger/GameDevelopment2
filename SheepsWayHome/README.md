@@ -44,12 +44,6 @@ To aviod the objects move forward, backwards or rotate left or right. To win is 
 - [x] Proper use of methods/functions to organize code
 - [x] No critical errors that prevent gameplay
 
-### Known Bugs
-- when shift boost is clicked it doesn't have the sound.
-
-### Limitations
-- Sounds were free so it was hard getting what I want.
-
 ## Extensions Implemented
 
 ### Technical Features:
