@@ -10,11 +10,11 @@ The hero got lost after a mision and is trying to get back to the castle. Make y
 - d- move right
 - a- move left
 - space- jump
-- shift - roll
+- left shift - roll
+- left click - attack
 
 ### How to Play
-To aviod the debris move forward, backwards or rotate left or right. you can stop yourself with the space bar incase of something right there or if you are too slow boost with shift.
-DO NOT touch the debris or the wall. The debris will get faster as time goes on.
+You can avoid or attack the monster. They are trying to stop you from getting back. you can choose which class you want for the game. Choose wisely or the hero won't get back to the castle. Jump across the platform to helpo you get to your goal.
 
 
 ## Credits
