@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175a433d991d7fe42868281b8f6fe87b, type: 3}
+  m_Name: Tank
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerClassData
+  className: Tank
+  classPrefab: {fileID: 7988850865198881281, guid: 93dc574a2ae9fd54e99bd626be9016ed, type: 3}
+  baseHealth: 150
+  baseAttack: 7
+  baseAgility: 0.8
+  baseAttackRange: 3
+  classColor: {r: 0.6431373, g: 1, b: 1, a: 1}
