@@ -7,3 +7,5 @@
   - The Fox is to collecting all of the cherries and reach his house. Jump across platform to get the cherries and to get to his house To win the game, collect cherries and reach the end.
 ## Sheep's Way Home (3D)
   - The Sheep needs to collect all of his flowers while he trying to get home. Help the sheep dodge objects and collect the flowers to get back home. Will you dodge all the objects trying to get flowers and get home?
+## Across The Kingdom Beta (2D)
+  - The hero got lost after a mision and is trying to get back to the castle. Make your way across the land to reach the castle, but watch out for the moster that are roaming.
