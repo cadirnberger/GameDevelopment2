@@ -5,8 +5,7 @@ public class EnemyCombat : MonoBehaviour, IAttacker
     EnemyStats stats;  
     LayerMask playerLayer;
     EnemyAnimation anim;
-
-    [SerializeField] private float attackCooldown = 1f;
+    private float attackCooldown = 1f;
     private float lastAttackTime = -999f;  // enemy can attack immediately
 
     void Start()
