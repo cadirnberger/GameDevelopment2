@@ -15,6 +15,6 @@ MonoBehaviour:
   enemyName: Mushroom
   health: 200
   attack: 6
-  speed: 2.5
-  attackRange: 2
+  speed: 2.8
+  attackRange: 4
   detectionRange: 10

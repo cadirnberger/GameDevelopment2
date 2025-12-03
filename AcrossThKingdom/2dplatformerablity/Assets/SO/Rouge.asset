@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerClassData
   className: Rouge
   classPrefab: {fileID: 3508356608352679, guid: f4e528abf66a20a43a6e5e6370085a63, type: 3}
-  baseHealth: 80
+  baseHealth: 85
   baseAttack: 8
-  baseAgility: 1.2
+  baseAgility: 2
   baseAttackRange: 3
   classColor: {r: 0.5764706, g: 1, b: 0.49411765, a: 1}

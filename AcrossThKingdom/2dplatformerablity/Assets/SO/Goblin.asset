@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemiesData
   enemyName: Goblin
   health: 50
-  attack: 2
+  attack: 1
   speed: 10
-  attackRange: 1.6
-  detectionRange: 15
+  attackRange: 3
+  detectionRange: 14

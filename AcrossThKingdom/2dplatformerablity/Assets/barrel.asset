@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ground
+  m_Name: barrel
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 21300000, guid: 4aa0a50e546194c289de175afdd9e097, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a29c023f27ad34e45852863a878d1984, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
-    e00: 7
+    e00: 4.5
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 2
+    e11: 3.5
     e12: 0
     e13: 0
     e20: 0

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class HeroKnight : MonoBehaviour, IDamageable
 {
@@ -35,9 +36,18 @@ public class HeroKnight : MonoBehaviour, IDamageable
     }
     }
 
-private void Die()
+void Die()
 {
+    if (isDead) return;
+
     isDead = true;
+    animationController.HandleDeath();
+    StartCoroutine(DelayedDeathUI());
+}
+
+IEnumerator DelayedDeathUI()
+{
+    yield return new WaitForSeconds(1f);
     uiManager.ShowDeathUI();
 }
 

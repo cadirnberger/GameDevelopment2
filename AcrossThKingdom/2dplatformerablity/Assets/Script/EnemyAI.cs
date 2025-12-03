@@ -6,6 +6,8 @@ public class EnemyAI : MonoBehaviour
     EnemyCombat combat;
     EnemyStats stats;
     EnemyAnimation anim;
+    Rigidbody2D rb;
+
     
 
     private void Start()
@@ -19,6 +21,7 @@ public class EnemyAI : MonoBehaviour
         combat = GetComponent<EnemyCombat>();
         stats = GetComponent<EnemyStats>();
         anim = GetComponent<EnemyAnimation>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
@@ -42,7 +45,7 @@ public class EnemyAI : MonoBehaviour
             Vector2 dir = (player.position - transform.position).normalized;
 
             // Move enemy
-            transform.position += new Vector3(dir.x, 0, 0) * stats.Speed * Time.deltaTime;
+            rb.velocity = new Vector2(dir.x * stats.Speed, rb.velocity.y);
 
             // PLAY MOVEMENT ANIMATION
             anim.SetMoving(true);
@@ -50,6 +53,7 @@ public class EnemyAI : MonoBehaviour
         else
         {
             // Stop moving when attacking or idle
+            rb.velocity = new Vector2(0, 0);
             anim.SetMoving(false);
 
             if (distance <= stats.AttackRange)

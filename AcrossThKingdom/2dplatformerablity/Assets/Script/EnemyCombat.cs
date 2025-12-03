@@ -31,13 +31,14 @@ public class EnemyCombat : MonoBehaviour, IAttacker
 
         if (hit != null)
         {
+            anim.PlayAttack();
             IDamageable damageable =
                 hit.GetComponent<IDamageable>() ??
                 hit.GetComponentInParent<IDamageable>() ??
                 hit.GetComponentInChildren<IDamageable>();
 
             damageable?.TakeDamage(GetDamage());
-            anim.PlayAttack();
+            
 
             // Reset cooldown
             lastAttackTime = Time.time;
