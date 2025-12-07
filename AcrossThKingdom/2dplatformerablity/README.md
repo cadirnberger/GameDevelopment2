@@ -13,28 +13,28 @@ How you can play is to go to unity play, then go to the search press the search 
 A is to walk left, D is to walk right, Space is to jump, Left Shift is to roll, Left Click to attack.
 
 ### Features
-Scrolling background
-3 player classes
-2 different levels
-4 different  enemies
-UI for start, player selection, health bar, death, next level,  and win
-Leveling up stats for the player
+- Scrolling background
+- 3 player classes
+- 2 different levels
+- 4 different  enemies
+- UI for start, player selection, health bar, death, next level,  and win
+- Leveling up stats for the player
 
 
 ## Part 2: Development Info
 
 ### Assets & Resources Used 
-8-bit Fantasy & Adventure Music -xDeviruchi
-RPG Essentials Sound Effects - FREE!- leohpaz
-Pixel 2D Castle Tileset- Szadi Art
-GUI Parts-Poneti
-Free Pixel Font - Thaleah - Tiny Worlds
-GothicVania Town- Ansimuz
-Monsters_Creatures_Fantasy-Luiz melo
-2D Pixel Art Platformer | Biome - American Forest - Superposition principle
-Pixel Art Platformer - Village Props - Cainos
-Hero Knight - Pixel Art - Sven Thole
-How to make a HEALTH BAR in Unity! -Brackeys
+- 8-bit Fantasy & Adventure Music -xDeviruchi
+- RPG Essentials Sound Effects - FREE!- leohpaz
+- Pixel 2D Castle Tileset- Szadi Art
+- GUI Parts-Poneti
+- Free Pixel Font - Thaleah - Tiny Worlds
+- GothicVania Town- Ansimuz
+- Monsters_Creatures_Fantasy-Luiz melo
+- 2D Pixel Art Platformer | Biome - American Forest - Superposition principle
+- Pixel Art Platformer - Village Props - Cainos
+- Hero Knight - Pixel Art - Sven Thole
+- How to make a HEALTH BAR in Unity! -Brackeys
 
 ### Technical Details 
 unity version: 6000.2.7f2, 2D animation,2D Tilemap Editor, 2D sprite, Cinemachine, Input system, Unity UI
