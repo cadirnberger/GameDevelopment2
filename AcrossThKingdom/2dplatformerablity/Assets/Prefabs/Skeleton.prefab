@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 8701273917535477653}
   - component: {fileID: 4156415621669843843}
   - component: {fileID: 1846028925724167901}
+  - component: {fileID: 4965351773847175409}
   m_Layer: 8
   m_Name: Skeleton
   m_TagString: Untagged
@@ -134,6 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   stats: {fileID: 4156415621669843843}
   enemyData: {fileID: 11400000, guid: 062bde8ff4cfea440a63faf4187e9038, type: 2}
+  hitSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
+  deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!61 &3635513317601456217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da3df4a04be349439eb622b4efea8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  attackSound: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
 --- !u!114 &1676025764670582038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,3 +259,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032dda1d535c568468c112f958c434b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAnimation
+--- !u!114 &4965351773847175409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4438005292150507157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e691ae68092974a860f8ce379829c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroSoundManager

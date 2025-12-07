@@ -3,8 +3,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField] private EnemyStats stats;
-    [SerializeField] private EnemiesData enemyData;
+    [SerializeField] public EnemiesData enemyData;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
     EnemyAnimation anim;
+    SoundManager soundManager;
     private float currentHealth;
     private bool isDead = false;
 
@@ -14,6 +17,7 @@ public class Enemy : MonoBehaviour, IDamageable
     stats.Initialize(enemyData);
     currentHealth = stats.Health;
     anim = GetComponent<EnemyAnimation>();
+    soundManager = GetComponent<SoundManager>();
     
 
     }
@@ -25,6 +29,9 @@ public class Enemy : MonoBehaviour, IDamageable
 
     currentHealth -= damage;
     anim.PlayHurt();
+    soundManager.PlaySound(hitSound);
+
+
 
     if (currentHealth <= 0)
     {
@@ -37,8 +44,8 @@ public class Enemy : MonoBehaviour, IDamageable
     {
     Destroy(gameObject,.5f);
     isDead = true;
-    Debug.Log("[Enemy] Enemy has died.");
     anim.PlayDeath();
+    soundManager.PlaySound(deathSound);
     }
 }
     

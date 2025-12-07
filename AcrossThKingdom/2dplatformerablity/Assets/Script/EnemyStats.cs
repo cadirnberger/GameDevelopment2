@@ -26,8 +26,6 @@ public class EnemyStats : MonoBehaviour
         Speed = enemiesData.speed;
         AttackRange = enemiesData.attackRange;
         DetectionRange = enemiesData.detectionRange;
-
-        Debug.Log($"[EnemyStats] Initialized {enemiesData.enemyName} - Health:{Health}, Attack:{Attack}, Speed:{Speed}, AttackRange:{AttackRange}, DetectionRange:{DetectionRange}");
     }
 
 }

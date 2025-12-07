@@ -35,8 +35,6 @@ public class PlayerStats : MonoBehaviour
         Attack = classData.baseAttack+ SelectedClass.bonusAttack;
         Agility = classData.baseAgility+ SelectedClass.bonusAgility;
         AttackRange = classData.baseAttackRange;
-
-        Debug.Log($"[PlayerStats] Initialized {classData.className} - Health:{Health}, Attack:{Attack}, Agility:{Agility}");
     }
 
 

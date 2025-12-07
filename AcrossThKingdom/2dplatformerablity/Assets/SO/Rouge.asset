@@ -16,6 +16,13 @@ MonoBehaviour:
   classPrefab: {fileID: 3508356608352679, guid: f4e528abf66a20a43a6e5e6370085a63, type: 3}
   baseHealth: 85
   baseAttack: 8
-  baseAgility: 2
+  baseAgility: 1.1
   baseAttackRange: 3
+  attackSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  jumpSound: {fileID: 0}
+  rollSound: {fileID: 0}
+  landSound: {fileID: 0}
+  climbSound: {fileID: 0}
   classColor: {r: 0.5764706, g: 1, b: 0.49411765, a: 1}

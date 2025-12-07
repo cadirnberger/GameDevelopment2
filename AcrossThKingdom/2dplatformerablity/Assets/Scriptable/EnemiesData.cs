@@ -9,5 +9,6 @@ public class EnemiesData : ScriptableObject
     public float speed;
     public float attackRange;
     public float detectionRange;
+    public AudioClip attackSound;
     
 }

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1232502319341817115}
   - component: {fileID: 7709605071630717500}
   - component: {fileID: 7031672428643009517}
+  - component: {fileID: 1784006296269921992}
   m_Layer: 8
   m_Name: Flying eye
   m_TagString: Untagged
@@ -180,6 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   stats: {fileID: 1232502319341817115}
   enemyData: {fileID: 11400000, guid: d04c9c88f2d62dd4ebafc3c3e3655349, type: 2}
+  hitSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
+  deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!114 &4431465960299536869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da3df4a04be349439eb622b4efea8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  attackSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
 --- !u!50 &7031672428643009517
 Rigidbody2D:
   serializedVersion: 5
@@ -254,4 +258,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &1784006296269921992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4948407737396904136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e691ae68092974a860f8ce379829c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroSoundManager

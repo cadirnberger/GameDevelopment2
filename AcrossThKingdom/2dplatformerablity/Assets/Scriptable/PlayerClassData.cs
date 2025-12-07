@@ -9,5 +9,12 @@ public class PlayerClassData : ScriptableObject
     public int baseAttack;
     public float baseAgility;
     public float baseAttackRange;
+    public AudioClip attackSound;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
+    public AudioClip jumpSound;
+    public AudioClip rollSound;
+    public AudioClip landSound;
+    public AudioClip climbSound;
     public Color classColor = Color.red;
 }

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7590264307794831773}
   - component: {fileID: 1215117251779718764}
   - component: {fileID: 108371378101825949}
+  - component: {fileID: 985244375577951824}
   m_Layer: 8
   m_Name: Mushroom
   m_TagString: Untagged
@@ -180,6 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   stats: {fileID: 1215117251779718764}
   enemyData: {fileID: 11400000, guid: f48901229ecfa41459b2520892a2896a, type: 2}
+  hitSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
+  deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!114 &2543258172710100223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da3df4a04be349439eb622b4efea8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
+  attackSound: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
 --- !u!114 &1215117251779718764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,3 +259,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &985244375577951824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958722168071286716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e691ae68092974a860f8ce379829c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroSoundManager

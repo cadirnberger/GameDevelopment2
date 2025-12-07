@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerClassData
   className: Tank
   classPrefab: {fileID: 7988850865198881281, guid: 93dc574a2ae9fd54e99bd626be9016ed, type: 3}
-  baseHealth: 150
+  baseHealth: 160
   baseAttack: 7
   baseAgility: 0.8
   baseAttackRange: 3
+  attackSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  jumpSound: {fileID: 0}
+  rollSound: {fileID: 0}
+  landSound: {fileID: 0}
+  climbSound: {fileID: 0}
   classColor: {r: 0.6431373, g: 1, b: 1, a: 1}

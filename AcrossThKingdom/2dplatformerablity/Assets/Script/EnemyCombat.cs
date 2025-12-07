@@ -1,18 +1,25 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyCombat : MonoBehaviour, IAttacker
 {
-    EnemyStats stats;  
+    EnemyStats stats;
+    private EnemiesData enemyData;  
     LayerMask playerLayer;
     EnemyAnimation anim;
+    SoundManager soundManager;
+    Enemy enemy;
+    public AudioClip attackSound;
     private float attackCooldown = 1f;
     private float lastAttackTime = -999f;  // enemy can attack immediately
 
     void Start()
     {
+        
         stats = GetComponent<EnemyStats>();
         playerLayer = LayerMask.GetMask("Player");
         anim = GetComponent<EnemyAnimation>();
+        soundManager = GetComponent<SoundManager>();
     }
 
     public float GetDamage()
@@ -32,6 +39,7 @@ public class EnemyCombat : MonoBehaviour, IAttacker
         if (hit != null)
         {
             anim.PlayAttack();
+            soundManager.PlaySound(attackSound);
             IDamageable damageable =
                 hit.GetComponent<IDamageable>() ??
                 hit.GetComponentInParent<IDamageable>() ??

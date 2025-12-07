@@ -8,6 +8,7 @@ public class HK_Animation : MonoBehaviour
     Rigidbody2D body;
 
     float idleDelay = 0f;
+    int comboStep = 0;
 
     void Awake()
     {
@@ -65,6 +66,8 @@ public class HK_Animation : MonoBehaviour
     animator.SetTrigger("Hurt");
         
     }
-
-
+    public void HandleAttack(int comboStep)
+    {
+        animator.SetTrigger("Attack" + comboStep);
+    }
 } 

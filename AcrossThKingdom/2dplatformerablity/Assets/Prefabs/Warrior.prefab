@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 6112074097456739176}
   - component: {fileID: 777215220072161846}
   - component: {fileID: 3882266818460909053}
+  - component: {fileID: -718688360555280684}
   m_Layer: 7
   m_Name: Warrior
   m_TagString: Player
@@ -140,6 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5034bc83802944c9bca57c55e08978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
   uiManager: {fileID: 0}
   healthBar: {fileID: 0}
 --- !u!95 &3406764227758756207
@@ -367,6 +369,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 865fb5e73c1969942b1ab3e9d01bbe0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movment
+--- !u!114 &-718688360555280684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6656073961106568648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e691ae68092974a860f8ce379829c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroSoundManager
 --- !u!1 &7281340620056830573
 GameObject:
   m_ObjectHideFlags: 0

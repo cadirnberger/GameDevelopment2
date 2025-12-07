@@ -45,7 +45,7 @@ public class EnemyAI : MonoBehaviour
             Vector2 dir = (player.position - transform.position).normalized;
 
             // Move enemy
-            rb.velocity = new Vector2(dir.x * stats.Speed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(dir.x * stats.Speed, rb.linearVelocity.y);
 
             // PLAY MOVEMENT ANIMATION
             anim.SetMoving(true);
@@ -53,7 +53,7 @@ public class EnemyAI : MonoBehaviour
         else
         {
             // Stop moving when attacking or idle
-            rb.velocity = new Vector2(0, 0);
+            rb.linearVelocity = new Vector2(0, 0);
             anim.SetMoving(false);
 
             if (distance <= stats.AttackRange)

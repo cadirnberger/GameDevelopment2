@@ -67,5 +67,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7988850865198881281, guid: 93dc574a2ae9fd54e99bd626be9016ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914135044991317127}
   m_SourcePrefab: {fileID: 100100000, guid: 93dc574a2ae9fd54e99bd626be9016ed, type: 3}
+--- !u!1 &3508356608352679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7988850865198881281, guid: 93dc574a2ae9fd54e99bd626be9016ed, type: 3}
+  m_PrefabInstance: {fileID: 7985567530521639846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914135044991317127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508356608352679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e691ae68092974a860f8ce379829c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroSoundManager

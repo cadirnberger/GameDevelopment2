@@ -18,3 +18,4 @@ MonoBehaviour:
   speed: 6
   attackRange: 3.5
   detectionRange: 7
+  attackSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}

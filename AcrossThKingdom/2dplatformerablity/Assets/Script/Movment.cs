@@ -7,6 +7,10 @@ public class Movement : MonoBehaviour
     PlayerStats stats;
     Rigidbody2D body;
     HK_Animation animation;
+    SoundManager soundManager;
+    public AudioClip rollSound;
+    public AudioClip jumpSound;
+
 
     public bool Grounded { get; private set; }
     public bool Rolling { get; private set; }
@@ -22,6 +26,7 @@ public class Movement : MonoBehaviour
         stats = GetComponent<PlayerStats>();
         body = GetComponent<Rigidbody2D>();
         animation = GetComponent<HK_Animation>();
+        soundManager = GetComponent<SoundManager>();
     }
 
     void Update()
@@ -61,8 +66,7 @@ public class Movement : MonoBehaviour
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, 15 * stats.Agility);
             sensors.Ground.Disable(0.2f);
-            
-        
+            soundManager.PlaySound(jumpSound);
         }
     }
 
@@ -74,6 +78,7 @@ public class Movement : MonoBehaviour
         Rolling = true;
         rollTimer = 0f;
         animation.HandleRollAnimation();  // Trigger roll animation once
+        soundManager.PlaySound(rollSound);
     }
 
     // Rolling in progress

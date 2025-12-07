@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemiesData
   enemyName: Mushroom
   health: 200
-  attack: 6
-  speed: 2.8
+  attack: 10
+  speed: 4
   attackRange: 4
   detectionRange: 10
+  attackSound: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}

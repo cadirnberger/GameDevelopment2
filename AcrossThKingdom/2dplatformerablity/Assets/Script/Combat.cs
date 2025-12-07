@@ -5,11 +5,12 @@ public class Combat : MonoBehaviour, IAttacker
     
     HK_Input input;
     Movement movement;
-    Animator animator;
+    HK_Animation animator;
+    HeroKnight heroKnight;
     LayerMask enemyLayer;
     PlayerStats stats;
-    
-
+    SoundManager soundManager;
+    public AudioClip attackSound;
     int combo = 0;
     float attackTimer = 0;
 
@@ -17,40 +18,43 @@ public class Combat : MonoBehaviour, IAttacker
     {
         input = GetComponent<HK_Input>();
         movement = GetComponent<Movement>();
-        animator = GetComponent<Animator>();
+        animator = GetComponent<HK_Animation>();
         stats = GetComponent<PlayerStats>();
+        soundManager = GetComponent<SoundManager>();
+        heroKnight = GetComponent<HeroKnight>();
         enemyLayer = LayerMask.GetMask("Enemy");
     }
 
     void Update()
     {
+
         attackTimer += Time.deltaTime;
+        if (heroKnight.isDead) return;
 
-        if (input.Death) animator.SetTrigger("Death");
-        if (input.Hurt) animator.SetTrigger("Hurt");
-
-        HandleBlock();
         HandleAttack();
     }
 
-    void HandleBlock()
-    {
-        if (input.BlockStart) animator.SetBool("IdleBlock", true);
-        if (input.BlockEnd) animator.SetBool("IdleBlock", false);
-    }
+    
 
     void HandleAttack()
     {
-        if (input.Attack && attackTimer > 0.25f && !movement.Rolling)
-        {
-            combo = (combo % 3) + 1;
-            if (attackTimer > 1f) combo = 1;
 
-            animator.SetTrigger("Attack" + combo);
-            attackTimer = 0;
-            PerformHitDetection();
+    if (input.Attack && attackTimer > 0.25f && !movement.Rolling)
+    {
+        // Increase combo
+        combo = (combo % 3) + 1;
+
+        // Reset combo if too slow
+        if (attackTimer > 1f)
+            combo = 1;
+
+        animator.HandleAttack(combo);
+        soundManager.PlaySound(attackSound);
+        PerformHitDetection();
+        attackTimer = 0f;
+    }
+
             
-        }
     }
     public void PerformHitDetection()
     {
@@ -65,9 +69,12 @@ public class Combat : MonoBehaviour, IAttacker
         }
         
     }
+    
+
     public float GetDamage()
     {
         return stats.Attack;
     }
+
     
 }

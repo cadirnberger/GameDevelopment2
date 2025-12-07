@@ -4,21 +4,27 @@ using System.Collections;
 public class HeroKnight : MonoBehaviour, IDamageable
 {
     private PlayerStats playerStats;
+    private PlayerClassData classData;
+    SoundManager soundManager;
     public SpriteRenderer spriteRenderer;
     HK_Animation animationController;
     private float currentHealth;
-    private bool isDead = false;
+    public bool isDead = false;
     public PlayerUIManager uiManager;
     public HealthBar healthBar;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
 
     void Start()
     {
         playerStats = GetComponent<PlayerStats>();
-        spriteRenderer.color = SelectedClass.playerClass.classColor;
+        classData = SelectedClass.playerClass;
+        spriteRenderer.color = classData.classColor;
         currentHealth = playerStats.Health;
         animationController = GetComponent<HK_Animation>();
         healthBar.SetMaxHealth(currentHealth);
         uiManager.ShowHealthUI();
+        soundManager = GetComponent<SoundManager>();
         
     }
     
@@ -29,6 +35,9 @@ public class HeroKnight : MonoBehaviour, IDamageable
     currentHealth -= damage;
     healthBar.SetHealth(currentHealth);
     animationController.HandleHurt();
+    soundManager.PlaySound(hitSound);
+
+
 
     if (currentHealth <= 0)
     {
@@ -43,6 +52,8 @@ void Die()
     isDead = true;
     animationController.HandleDeath();
     StartCoroutine(DelayedDeathUI());
+    soundManager.PlaySound(deathSound);
+
 }
 
 IEnumerator DelayedDeathUI()
