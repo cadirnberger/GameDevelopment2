@@ -54,5 +54,4 @@ my challenge is to realize that some of the features just need to be scraped and
 not everything is going to be in the final game and maybe implement it another time.
 
 ### Version 2.0 Ideas 
-more levels, try to get the roll better, make the block so the player can block the attack, have more stats like defence, more enemies, health packs and make it more challenging.
-
+more levels, try to get the roll better, make the block so the player can block the attack, have more stats like defence, more enemies, health packs, make it more challenging, and make a story to it.
